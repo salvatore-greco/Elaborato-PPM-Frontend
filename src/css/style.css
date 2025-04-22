@@ -1,0 +1,65 @@
+.top-header {
+    background-color: #c60800;
+    height: 86px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between
+}
+
+.bottom-header {
+    height: 35px;
+    /*height: 50px;*/
+    background-color: black
+}
+
+.bottom-header a {
+    color: white;
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+    font-weight: 700;
+}
+.bottom-header ul{
+    height: 100%;
+}
+
+.nav-link{
+    padding: 0.00005rem;
+}
+.surrounding-border{
+    border-color: white;
+}
+.bi-search {
+    color: white;
+    width: 1em;
+    height: 1em
+}
+
+.bi-envelope-fill {
+    color: white;
+    width: 1em;
+    height: 1em
+}
+
+#site-title {
+    align-self: center;
+    font-family: Anton;
+    font-size: 3em;
+    color: white;
+    font-style: italic;
+    text-shadow: -1px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black, 0 0 5px black
+}
+
+#section {
+    font-family: Neue Haas Grotesk Display Pro;
+    font-weight: 700
+}
+
+#header-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px
+}
+
+#page-six {
+    color: white
+}
