@@ -2,7 +2,6 @@
     background-color: #c60800;
     height: 86px;
     display: flex;
-    margin: 0 auto;
     justify-content: space-between
 }
 
@@ -22,10 +21,11 @@
 }
 
 .nav-link{
-    padding: 0.00005rem;
+    padding: 0;
 }
 .surrounding-border{
-    border-color: white;
+    border-right: solid white;
+    padding-right: 1rem;
 }
 .bi-search {
     color: white;
