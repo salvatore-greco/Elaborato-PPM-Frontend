@@ -1,14 +1,14 @@
 .top-header {
     background-color: #c60800;
     height: 86px;
-    display: flex;
-    justify-content: space-between
+    /*display: flex;*/
+    /*justify-content: space-between*/
 }
 
 .bottom-header {
     height: 35px;
     /*height: 50px;*/
-    background-color: black
+    /*background-color: black*/
 }
 
 .bottom-header a {
@@ -29,16 +29,18 @@
 }
 .bi-search {
     color: white;
-    width: 1em;
-    height: 1em
+    width: 2em;
+    height: 2em
 }
-
 .bi-envelope-fill {
     color: white;
-    width: 1em;
-    height: 1em
+    width: 2em;
+    height: 2em
 }
-
+/*ridimensiona le icone*/
+i {
+    font-size: 1.5rem;
+}
 #site-title {
     align-self: center;
     font-family: Anton;
@@ -54,12 +56,8 @@
 }
 
 #header-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15px
-}
-
-#page-six {
-    color: white
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*padding-left: 15px*/
 }
