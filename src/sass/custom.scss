@@ -9,4 +9,13 @@ $nav-link-hover-color: white ;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+.mx-6{
+  margin-left: $spacer * 6 !important;
+  margin-right: $spacer * 6 !important;
+}
+
+.mx-7{
+  margin-left: $spacer * 12 !important;
+  margin-right: $spacer * 12 !important;
+}
 // Then add additional custom code here
