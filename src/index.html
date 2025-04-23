@@ -15,9 +15,9 @@
 </head>
 <body>
 <header>
-    <div class="top-header">
-        <div id="header-left">
-            <button class="btn btn-outline-light">
+    <div class="top-header d-flex justify-content-between">
+        <div id="header-left" class="d-flex justify-content-center align-items-center ps-4">
+            <button class="btn btn-outline-light py-0 px-1 d-flex align-items-center gap-1">
                 <i class="bi bi-list"></i>
                 <span id="section">SECTION</span>
             </button>
@@ -29,12 +29,12 @@
                 <i class="bi bi-envelope-fill"></i>
             </button>
         </div>
-        <span id="site-title">NEW YORK POST</span>
+        <span id="site-title" class="text-nowrap">NEW YORK POST</span>
         <button class="btn">
             <img src="https://placehold.co/206x47" alt="Read on Pagesix"/>
         </button>
     </div>
-    <div class="bottom-header">
+    <div class="bottom-header bg-black">
         <ul class="nav nav-underline align-items-center justify-content-center">
             <li class="nav-item surrounding-border">
                 <a class="nav-link" href="#">PAGE SIX</a>
@@ -54,5 +54,29 @@
         </ul>
     </div>
 </header>
+<section>
+    <div id="breaking-news-container" class="mx-7 column-gap-2 pt-4 pb-2 border-bottom border-2 border-dark">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="https://placehold.co/84x56" alt="title-cover">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+            <div class="col border-end border-start border-dark">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="https://placehold.co/84x56" alt="title-cover">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="https://placehold.co/84x56" alt="title-cover">
+                    <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
