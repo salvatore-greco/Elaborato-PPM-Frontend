@@ -6,8 +6,13 @@
 
 //$nav-link-color: white;
 $nav-link-hover-color: white ;
+//$theme-colors:(
+//  "ny-red": #c60800
+//);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
 
 .mx-6{
   margin-left: $spacer * 6 !important;
@@ -18,4 +23,33 @@ $nav-link-hover-color: white ;
   margin-left: $spacer * 12 !important;
   margin-right: $spacer * 12 !important;
 }
-// Then add additional custom code here
+.mx-lg-7{
+    @include media-breakpoint-up(lg) {
+        margin-left: $spacer * 12 !important;
+        margin-right: $spacer * 12 !important;
+    }
+}
+.mx-xxl-7{
+  @include media-breakpoint-up(xxl){
+    margin-left: $spacer * 12 !important;
+    margin-right: $spacer * 12 !important;
+  }
+}
+.ms-6{
+  margin-left: $spacer *6 !important;
+}
+.ms-7{
+  margin-left: $spacer * 12 !important;
+}
+
+.ms-lg-6{
+    @include media-breakpoint-up(lg) {
+      margin-left: $spacer * 6 !important;
+  }
+}
+.me-lg-6{
+  @include media-breakpoint-up(lg) {
+    margin-right: $spacer * 6 !important;
+  }
+}
+
