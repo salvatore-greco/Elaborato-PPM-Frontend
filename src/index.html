@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <title>New York Post - Breaking News, Top Headlines, Photos&Videos</title>
     <link rel="stylesheet" href="css/custom.css">
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link rel="icon" type="image/x-icon" href="https://placehold.co/128x128">
-    <style src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></style>
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro" rel="stylesheet">
@@ -16,28 +16,28 @@
 </head>
 <body>
 <header>
-    <div class="top-header d-flex justify-content-between">
-        <div id="header-left" class="d-flex justify-content-center align-items-center ps-4">
-            <button class="btn btn-outline-light py-0 px-1 d-flex align-items-center gap-1">
+    <div class="top-header d-flex justify-content-lg-between bg-ny-red">
+        <div id="header-left" class="justify d-flex justify-content-center align-items-center ps-4 ms-lg-6 ms-2">
+            <button class="btn btn-outline-light py-0 px-1 d-flex align-items-center gap-1" aria-label="section-menu">
                 <i class="bi bi-list"></i>
                 <span class="neue">SECTION</span>
             </button>
-            <button class="btn">
+            <button class="btn" aria-label="search">
                 <i class="bi bi-search"></i>
                 <!-- nella guida di bootstrap icons c'è scritto di usare le icone col tag i-->
             </button>
-            <button class="btn">
+            <button class="btn" aria-label="mail us">
                 <i class="bi bi-envelope-fill"></i>
             </button>
         </div>
         <span id="site-title" class="text-nowrap">NEW YORK POST</span>
-        <button class="btn">
-            <img src="https://placehold.co/206x47" alt="Read on Pagesix"/>
+        <button class="btn me-lg-6 d-none d-lg-block">
+            <img src="https://placehold.co/206x47" alt="Read on Pagesix">
         </button>
     </div>
-    <div class="bottom-header bg-black">
+    <nav class="bottom-header bg-black">
         <ul class="nav nav-underline align-items-center justify-content-center gap-3">
-            <li class="nav-item surrounding-border pt-1">
+            <li class="nav-item surrounding-border pt-1"> <!-- TODO: fallo con boostrap, per consistenza -->
                 <a class="nav-link neue text-white" href="#">PAGE SIX</a>
             </li>
             <li class="nav-item surrounding-border pt-1">
@@ -53,39 +53,157 @@
                 <a class="nav-link neue text-white" href="#">BUSINESS</a>
             </li>
         </ul>
-    </div>
+    </nav>
 </header>
 <!-- Breaking news -->
-<section class="text-nowrap">
-    <div class="d-flex mx-7 bg-warning mt-4 neue gap-3 align-items-center">
-        <div id="bn-line" class="bg-black neue text-white p-1">Breaking News</div>
+<section class="d-none d-lg-block">
+    <div class="d-flex mx-4 mx-xl-5 mx-xxl-7 bg-warning mt-4 neue gap-3 align-items-center">
+        <div id="bn-line" class="bg-black neue text-white p-1">
+            <span>Breaking News</span>
+        </div>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris.
     </div>
 </section>
 <!-- Breaking News Grid-->
 <section>
-    <div id="breaking-news-container" class="mx-7 column-gap-2 pt-4 pb-2 border-bottom border-2 border-dark">
+    <div id="breaking-news-container"
+         class="d-none d-lg-block  column-gap-2 pt-4 pb-2 border-bottom border-2 border-dark container">
         <div class="row">
             <div class="col">
                 <div class="d-flex align-items-center gap-3">
                     <img src="https://placehold.co/84x56" alt="title-cover">
-                    <span class="bold lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <span class="bold lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                    </span>
+
                 </div>
             </div>
             <div class="col border-end border-start border-dark">
                 <div class="d-flex align-items-center gap-3">
                     <img src="https://placehold.co/84x56" alt="title-cover">
-                    <span class="bold lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <span class="bold lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                    </span>
                 </div>
             </div>
             <div class="col">
                 <div class="d-flex align-items-center gap-3">
                     <img src="https://placehold.co/84x56" alt="title-cover">
-                    <span class="bold lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+                    <span class="bold lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                    </span>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- Main content -->
+<!--<main class="mx-augccto  pt-4">-->
+<main class="container pt-4">
+    <!--    <div class="mx-sm-4 mx-xl-5 mx-xxl-7 pt-4">-->
+    <!--    <div class="container">-->
+    <div class="row"> <!-- Riga di pagina -->
+        <div class="col-lg-8 col-12"> <!-- Colonna principale -->
+            <article class="row border-bottom border-dark border-opacity-75 pb-2"> <!-- Notizia principale -->
+                <div class="col text-center">
+                    <h1 class="neue-huge text-ny-color text-center text-nowrap">MAIN NEWS TITLE!</h1>
+                    <img src="https://placehold.co/600x400" alt="title-cover" class="img-fluid">
+                    <h1 class="neue text-center">title Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+                    <p class="text-body-secondary">1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
+                        diam lectus. Sed sit amet ipsum mauris.</p>
+                </div>
+                <div class="row row-cols-2 row-gap-2">
+                    <div class="col d-flex justify-content-center lh-1">
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                        <span class="neue fs-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit.
+                        </span>
+                    </div>
+                    <div class="col d-flex justify-content-center lh-1">
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                        <span class="neue fs-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit.
+                        </span>
+                    </div>
+                    <div class="col d-flex justify-content-center lh-1">
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                        <span class="neue fs-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit.
+                        </span>
+                    </div>
+                    <div class="col d-flex justify-content-center lh-1">
+                        <span class="bi bi-chevron-right text-ny-color fs-6"></span>
+                        <span class="neue fs-6">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit.
+                        </span>
+                    </div>
+                </div>
+            </article>
+            <article class="row row-cols-md-3 mt-4 px-lg-0 px-md-4 px-0">
+                <div class="col-md d-flex flex-md-column align-items-center gap-2">
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/215x145" class="img-fluid" alt="title-cover">
+                    </div>
+                    <span class="neue lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et faucibus urna.</span>
+                </div>
+                <div
+                     class="col-md d-flex flex-md-column gap-2 border my-3 my-md-0 py-3 py-md-0 align-items-center border-dark news-col-center">
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/215x145" class="img-fluid" alt="title-cover">
+                    </div>
+                    <span class="neue lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et faucibus urna.</span>
+                </div>
+                <div class="col-md d-flex flex-md-column gap-2 align-items-center">
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/215x145" class="img-fluid" alt="title-cover">
+                    </div>
+                    <span class="neue lh-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi et faucibus urna.</span>
+                </div>
+            </article>
+            <article class="row mt-4">
+                <div class="col-md-7 d-flex flex-column gap-3 border-end border-bottom border-dark pe-md-4 py-2 news-col-left">
+                    <span class="neue"> <span class="neue text-ny-color">Title aaaa </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam. Sed congue risus quam, et condimentum sem interdum ac. Phasellus eget purus at lectus accumsan condimentum. Praesent ac porttitor est. Duis eu augue sit amet diam imperdiet ornare nec fermentum sapien.</span>
+                    <div class="flex-shrink-0">
+                        <img src="https://placehold.co/460x300" alt="title-cover" class="img-fluid">
+                    </div>
+                    <span class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam.</span>
+                </div>
+                <div class="col-md d-flex flex-column">
+                    <div class="d-flex flex-row flex-md-column gap-3 gap-md-1 py-2">
+                        <div class="flex-shrink-0">
+                            <img src="https://placehold.co/265x165" alt="title-cover" class="img-fluid">
+                        </div>
+                        <span class="neue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam.</span>
+                    </div>
+                    <div class="border-top border-dark py-2 d-flex flex-row flex-md-column gap-3 gap-md-1">
+                        <div class="flex-shrink-0">
+                            <img src="https://placehold.co/265x165" alt="title-cover" class="img-fluid">
+                        </div>
+                        <span class="neue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam.</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="col-lg-4 col-12 mt-lg-0 mt-4 px-2"> <!--sidebar-->
+            <div class="d-flex flex-column gap-3">
+                <div class="d-flex flex-column gap-2">
+                    <img src="https://placehold.co/300x200" alt="title-cover" class="img-fluid">
+                    <h2 class="neue">
+                        Side?
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum
+                        mauris.</p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <img src="https://placehold.co/300x200" alt="title-cover" class="img-fluid">
+                    <h2 class="neue">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                    <p> side Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet
+                        ipsum mauris.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    </div>-->
+</main>
 </body>
 </html>

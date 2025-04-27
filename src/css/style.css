@@ -1,6 +1,12 @@
+:root {
+    --ny-post-color: #c60800;
+    --main-title-size: 70px;
+}
+
 .top-header {
-    background-color: #c60800;
-    height: 86px;
+    background-color: var(--ny-post-color);
+    /*height: 86px;*/
+    height: 5.125rem;
     /*display: flex;*/
     /*justify-content: space-between*/
 }
@@ -8,8 +14,18 @@
     font-family: "Neue Haas Grotesk Display Pro", sans-serif;
     font-weight: 700;
 }
+.text-ny-color{
+    color: var(--ny-post-color);
+}
+.neue-huge{
+    font-family: "Neue Haas Grotesk Display Pro", sans-serif;
+    font-weight: 700;
+    font-size: var(--main-title-size);
+}
+
 .bottom-header {
-    height: 35px;
+    /*height: 35px;*/
+    height: 2.275rem;
     /*height: 50px;*/
     /*background-color: black*/
 }
@@ -61,3 +77,26 @@ i {
 #breaking-news-container span{
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
+
+@media screen and (min-width: 768px) { /* almeno md */
+    .news-col-center{
+        border-top: 0 !important; /* le classi bootstrap hanno !important, per sovrascriverne il comportamento lo devo mettere*/
+        border-bottom: 0 !important;
+    }
+    .news-col-left{
+        border-bottom: 0 !important;
+    }
+}
+@media screen and (max-width: 768px) { /* sm fino a md escluso */
+    .news-col-center{
+        border-left: 0 !important;
+        border-right: 0 !important;
+    }
+    .neue-huge{
+        font-size: calc((var(--main-title-size)/3)*2);
+    }
+    .news-col-left{
+        border-right: 0 !important;
+    }
+}
+
