@@ -92,7 +92,7 @@ i {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) {
     /* almeno md */
     .news-col-center {
         border-top: 0 !important; /* le classi bootstrap hanno !important, per sovrascriverne il comportamento lo devo mettere*/
@@ -104,8 +104,8 @@ i {
     }
 }
 
-@media screen and (max-width: 1199px) {
-    /* sm fino a xl escluso */
+@media screen and (max-width: 991px) {
+    /* sm fino a lg escluso */
     .news-col-center {
         border-left: 0 !important;
         border-right: 0 !important;
