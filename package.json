@@ -10,12 +10,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "bootstrap": "^5.3.5",
     "bootstrap-icons": "^1.11.3"
   },
   "devDependencies": {
     "sass": "^1.86.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvatore-greco/Elaborato-PPM-Frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/salvatore-greco/Elaborato-PPM-Frontend/issues"
+  },
+  "homepage": "https://github.com/salvatore-greco/Elaborato-PPM-Frontend#readme",
+  "description": ""
 }
