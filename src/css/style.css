@@ -70,7 +70,7 @@ i {
 .site-title {
     align-self: center;
     font-family: Anton, sans-serif;
-    font-size: 3em;
+    font-size: 3rem;
     color: white;
     font-style: italic;
     /*text-shadow: -4px 5px 0 black, 0 -2px 0 black, 0 0 5px black*/
@@ -92,7 +92,7 @@ i {
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     /* almeno md */
     .news-col-center {
         border-top: 0 !important; /* le classi bootstrap hanno !important, per sovrascriverne il comportamento lo devo mettere*/
@@ -104,14 +104,14 @@ i {
     }
 }
 
-@media screen and (max-width: 768px) {
-    /* sm fino a md escluso */
+@media screen and (max-width: 1199px) {
+    /* sm fino a xl escluso */
     .news-col-center {
         border-left: 0 !important;
         border-right: 0 !important;
     }
 
-    .neue-huge {
+    .neue-huge { /*TODO: Controlla bene sul telefono*/
         font-size: calc((var(--main-title-size) / 3) * 2);
     }
 
@@ -119,7 +119,15 @@ i {
         border-right: 0 !important;
     }
 }
-
+@media screen and (max-width: 992px) { /* TODO: Controlla bene dimensioni sul telefono */
+    .site-title{
+        align-self: center;
+        font-family: Anton, sans-serif;
+        font-size: 2rem;
+        color: white;
+        font-style: italic;
+    }
+}
 .skew-ny-red {
     transform: skew(-5deg);
     background-color: var(--ny-post-color);
@@ -157,4 +165,11 @@ i {
 }
 .border-ny-color{
     border-color: var(--ny-post-color) !important;
+}
+.border-news-list{
+    border-top: black 2px solid;
+    border-bottom: #dee2e6 1px solid;
+}
+.font-size-smaller{
+    font-size: 0.975rem; /* La uso perchè i testi della griglia sono leggermente più piccoli di 1rem, non c'è una classe bootstrap per questo */
 }

@@ -35,6 +35,16 @@ $nav-link-hover-color: white ;
     margin-right: $spacer * 12 !important;
   }
 }
+.ms-xl-7{
+  @include media-breakpoint-up(xl){
+    margin-left: $spacer * 12 !important;
+  }
+}
+.ms-xl-6{
+  @include media-breakpoint-up(xl){
+    margin-left: $spacer * 6 !important;
+  }
+}
 .ms-6{
   margin-left: $spacer *6 !important;
 }
