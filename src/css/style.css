@@ -196,3 +196,13 @@ i {
         scrollbar-width: none;
     }
 }
+.text-spacing{
+    letter-spacing: 0.1rem;
+}
+.sidebar-border-widget{
+    border-top: solid black 4px;
+    border-bottom: solid black 1px;
+}
+.bg-ny-red{
+    background-color: var(--ny-post-color);
+}
