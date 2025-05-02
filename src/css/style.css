@@ -69,7 +69,7 @@ i {
 .site-title { /* Questa è per il telefono */
     align-self: center;
     font-family: Anton, sans-serif;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: white;
     font-style: italic;
 }
@@ -163,13 +163,13 @@ i {
     box-shadow: -1px 1px 0 black,
     -2px 2px 0 black,
     -3px 3px 0 black, -4px 4px 0 black,
-    -5px 5px 0 black, -6px 6px 0 black
+    -5px 5px 0 black, -6px 6px 0 black;
 }
 .big-text-shadow {
     text-shadow: -1px 1px 0 black,
     -2px 2px 0 black,
     -3px 3px 0 black, -4px 4px 0 black,
-    -5px 5px 0 black, -6px 6px 0 black
+    -5px 5px 0 black, -6px 6px 0 black;
 }
 .outline-text {
     -webkit-text-stroke: 1px black; /* Per Chrome, Safari, e nuovi browser */
@@ -185,4 +185,14 @@ i {
 }
 .font-size-smaller{
     font-size: 0.975rem; /* La uso perchè i testi della griglia sono leggermente più piccoli di 1rem, non c'è una classe bootstrap per questo */
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+@supports (scrollbar-width: none) {
+    .no-scrollbar{
+        scrollbar-width: none;
+    }
 }

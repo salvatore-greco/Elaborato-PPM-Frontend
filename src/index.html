@@ -48,10 +48,11 @@
             <img src="https://placehold.co/206x47" alt="Read on Pagesix">
         </button>
     </div>
-    <nav class="bottom-header bg-black">
-        <ul class="nav nav-underline align-items-center justify-content-center gap-3">
+    <nav class="bottom-header bg-black overflow-x-auto overflow-y-hidden px-3 px-md-0 no-scrollbar">
+        <ul class="nav nav-underline align-items-center justify-content-md-center justify-content-start gap-3 flex-nowrap">
+            <!-- Questo è un flex -->
             <li class="nav-item surrounding-border pt-1"> <!-- TODO: fallo con boostrap, per consistenza -->
-                <a class="nav-link neue text-white" href="#">PAGE SIX</a>
+                <a class="nav-link neue text-white text-nowrap" href="#">PAGE SIX</a>
             </li>
             <li class="nav-item surrounding-border pt-1">
                 <a class="nav-link neue text-white" href="#">SPORTS</a>
@@ -303,25 +304,42 @@
                     </div>
                 </div>
                 <div class="col-md-7 d-flex flex-column gap-3 border-end border-bottom border-dark pe-md-4 py-2 news-col-left">
-                    <div class="neue"> <span class="neue text-ny-color">Title aaaa </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam. Sed congue risus quam, et condimentum sem interdum ac. Phasellus eget purus at lectus accumsan condimentum. Praesent ac porttitor est. Duis eu augue sit amet diam imperdiet ornare nec fermentum sapien.</div>
+                    <div class="neue"><span class="neue text-ny-color">Title aaaa </span>Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam. Sed congue risus quam,
+                        et condimentum sem interdum ac. Phasellus eget purus at lectus accumsan condimentum. Praesent ac
+                        porttitor est. Duis eu augue sit amet diam imperdiet ornare nec fermentum sapien.
+                    </div>
                     <div class="flex-shrink-0">
                         <img src="https://placehold.co/460x300" alt="title-cover" class="img-fluid">
                     </div>
                     <span class="text-body-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam.</span>
                 </div>
                 <div class="col col-md">
-                    <div class="d-flex flex-row flex-md-column gap-3 gap-md-1 py-2 flex-nowrap">
+                    <div class="d-flex flex-row flex-md-column gap-3 gap-md-1 py-2 ">
                         <div class="flex-shrink-0 no-all-image">
                             <img src="https://placehold.co/265x165" alt="title-cover" class="img-fluid">
                         </div>
                         <!-- TODO: fai il badge, non riesco a mettere il div grande quanto la parola che contiene -->
-                        <div class="neue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam.</div>
+                        <div>
+                            <div class="skew-ny-red text-white neue-little d-xl-inline-block d-none flex-shrink-0">
+                                Lorem
+                            </div>
+                        </div>
+                        <div class="neue">
+                            <!-- questo funziona -->
+                            <div class="skew-ny-red text-white neue-little d-inline-block d-xl-none">Lorem</div>
+                            <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus
+                                eleifend lectus non aliquam.</p>
+                        </div>
+
                     </div>
                     <div class="border-top border-dark py-2 d-flex flex-row flex-md-column gap-3 gap-md-1">
                         <div class="flex-shrink-0 no-all-image">
                             <img src="https://placehold.co/265x165" alt="title-cover" class="img-fluid">
                         </div>
-                        <div class="neue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus eleifend lectus non aliquam.</div>
+                        <div class="neue">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus
+                            eleifend lectus non aliquam.
+                        </div>
                     </div>
                 </div>
             </article>
