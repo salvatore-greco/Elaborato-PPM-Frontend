@@ -2,11 +2,10 @@
     --ny-post-color: #c60800;
     --main-title-size: 70px;
 }
-/*@media screen and (max-width: 768px){*/
-/*    body{*/
-/*        font-size: calc(var(--bs-body-font-size)*2);*/
-/*    }*/
-/*}*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
 .top-header {
     background-color: var(--ny-post-color);
     /*height: 86px;*/
@@ -199,4 +198,7 @@ i {
 }
 .bg-ny-red{
     background-color: var(--ny-post-color);
+}
+.reduced-font-size {
+    font-size: 0.975rem;
 }
